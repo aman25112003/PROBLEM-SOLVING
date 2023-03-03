@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main() 
+{
+  int num;
+  cout<<"ENTER THE NUMBER"<<endl;
+  cin>>num;
+  if(num>0)
+  {
+    cout<<"IT IS A POSITIVE NUMBER"<<endl;
+  }
+  else if(num<0)
+  {
+    cout<<"IT IS A NEGATIVE NUMBER"<<endl;
+  }
+  else
+  {
+    cout<<"THE NUMBER ENTERED IS ZERO"<<endl;
+  }
+}
