@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main() 
+{
+  int num,count=0;
+  cout<<"ENTER THE NUMBER"<<endl;
+  cin>>num;
+  for(int i=2;i<num;i++)
+    {
+      if(num%i==0)
+      {
+        count++;
+        break;
+      }
+    }
+  if(count>0)
+  {
+    cout<<"NOT PRIME"<<endl;
+  }
+  else
+  {
+    cout<<"PRIME"<<endl;
+  }
+  return 0;
+  
+}
