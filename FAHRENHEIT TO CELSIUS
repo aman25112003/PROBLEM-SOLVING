@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main() 
+{
+  float f,c;
+  cout<<"ENTER THE TEMPERATURE IN FAHRENHEIT"<<endl;
+  cin>>f;
+  c=((f-32)*5)/9;
+  cout<<"THE TEMPERATURE IN CELSIUS IS: "<<c<<" DEGREE CELSIUS"<<endl;
+  return 0;
+  
+  
+}
