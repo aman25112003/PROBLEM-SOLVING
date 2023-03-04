@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main() 
+{
+  int firstNum=0,secondNum=1;
+  int nextNum;
+  int num;
+  cout<<"ENTER THE NUMBER OF TERMS"<<endl;
+  cin>>num;
+  cout<<firstNum<<" "<<secondNum<<" ";
+  for(int i=2;i<=num;i++)
+    {
+      nextNum=firstNum+secondNum;
+      firstNum=secondNum;
+      secondNum=nextNum;
+      cout<<nextNum<<" ";
+    }
+  return 0;
+}
