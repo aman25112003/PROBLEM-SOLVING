@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+int main() 
+{
+  int num;
+  cout<<"ENTER THE NUMBER"<<endl;
+  cin>>num;
+  //PRINTING FULL PYRAMID
+  for(int i=0;i<num;i++)
+    {
+      //PRINTING SPACES
+      for(int j=0;j<num-i-1;j++)
+        {
+          cout<<" ";
+        }
+
+      //PRINTING STARS
+
+      for(int j=0;j<i+1;j++)
+        {
+          cout<<"* ";
+        }
+
+      cout<<endl;
+
+      
+    }
+  // PRINTING INVERTED FULL PYRAMID
+    for(int i=0;i<num;i++)
+    {
+      //PRINTING SPACES
+      for(int j=0;j<i;j++)
+        {
+          cout<<" ";
+        }
+
+      //PRINTING STARS
+
+      for(int j=0;j<num-i;j++)
+        {
+          cout<<"* ";
+        }
+
+      cout<<endl;
+    }
+  return 0;
+}
