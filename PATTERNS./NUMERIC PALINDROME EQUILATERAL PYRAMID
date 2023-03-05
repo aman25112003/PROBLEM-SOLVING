@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main() {
+
+  int num;
+  cout << "ENTER THE NUMBER" << endl;
+  cin >> num;
+
+  for (int i = 0; i < num; i++) {
+    for(int j=0;j<num-i-1;j++)
+      {
+        cout<<" ";
+      }
+    int j;
+    for (j = 0; j < i + 1; j++) {
+
+      cout << j + 1;
+    }
+    j = j - 1;
+    for (; j >= 1; j--) {
+
+      cout << j;
+    }
+    cout << endl;
+  }
+  return 0;
+}
