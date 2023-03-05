@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int main() {
+
+  int num;
+  cout << "ENTER THE NUMBER" << endl;
+  cin >> num;
+  int i;
+  for (i = 0; i < num; i++) {
+    // PRINTING THE SPACES:
+    for (int j = 0; j < num - i - 1; j++) {
+      cout << " ";
+    }
+    int count = i + 1;
+    //PRINTING PART-1:
+    for (int j = 0; j < i+1; j++) {
+      cout << count++;
+    }
+    count=count-2;
+    //PRINTING PART-2:
+    for(int j=0;j<i;j++)
+      {
+        cout<<count--;
+      }
+    cout << endl;
+  }
+
+  return 0;
+}
