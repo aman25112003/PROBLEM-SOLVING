@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main() 
+{
+  int num;
+  cout<<"ENTER THE NUMBER"<<endl;
+  cin>>num;
+
+  for(int i=0;i<num;i++)
+    {
+      //PRINTING SPACES
+      for(int j=0;j<i;j++)
+        {
+          cout<<" ";
+        }
+
+      //PRINTING STARS
+
+      for(int j=0;j<num-i;j++)
+        {
+          cout<<" *";
+        }
+
+      cout<<endl;
+    }
+  return 0;
+}
